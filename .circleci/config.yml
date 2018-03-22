@@ -26,23 +26,19 @@ jobs:
           <<: *node_modules_cache_params
       - run:
           name: Set up to gas clasp enviroment.
-          command: npm install --no-save
-          working_directory: ./
+          command: npm install
       - save_cache:
           name: Saving Cache.
           <<: *node_modules_cache_params
       - run:
           name: Run Lint.
           command: npm run lint
-          working_directory: ./
       - run:
           name: Run Test.
           command: npm run test
-          working_directory: ./
       - run:
           name: Run webpack build.
           command: npm run build
-          working_directory: ./
       - run:
           name: Deploy to GAS.
           command: |
