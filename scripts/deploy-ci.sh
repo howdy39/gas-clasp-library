@@ -5,4 +5,4 @@ echo "  CIRCLE_BRANCH: $CIRCLE_BRANCH"
 echo "----------------------"
 
 echo $CLASPRC_JSON > ~/.clasprc.json
-npx clasp push
+npx @google/clasp push
