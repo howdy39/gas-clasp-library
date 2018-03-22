@@ -25,7 +25,7 @@ jobs:
           name: Restore Cache.
           <<: *node_modules_cache_params
       - run:
-          name: Set up to Angular.
+          name: Set up to gas clasp enviroment.
           command: npm install --no-save
           working_directory: ./
       - save_cache:
