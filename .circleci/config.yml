@@ -62,10 +62,6 @@ jobs:
           at: attach_workspace
       - run: ls -la attach_workspace/dist
       - run:
-          name: Set up to Clasp.
-          command: npm install -g clasp
-          working_directory: ./
-      - run:
           name: Deploy to GAS.
           command: |
             if [ ${CIRCLE_BRANCH} = "master" ]; then
