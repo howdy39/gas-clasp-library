@@ -43,7 +43,7 @@ aliases:
 
   - &deploy
     name: Deploy to GAS.
-    command: echo deploy
+    command: ./scripts/deploy-ci.sh
 
 jobs:
   build:
